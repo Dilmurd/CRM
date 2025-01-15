@@ -5,7 +5,6 @@ import Auth from "../pages/auth/Auth";
 import Login from "../pages/login/Login";
 import Customer from "@/pages/customer/Customer";
 import Seller from "@/pages/seller/Seller";
-import Product from "@/pages/product/Product";
 
 const Routers = () => {
   return (
