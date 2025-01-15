@@ -31,10 +31,6 @@ const Routers = () => {
                       path: "/seller",
                       element: <Seller/>
                     },
-                    {
-                      path: "/product",
-                      element: <Product/>
-                    },
                   ]
                 },
               ],

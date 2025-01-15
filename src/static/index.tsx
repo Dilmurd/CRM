@@ -3,7 +3,8 @@ export interface Links {
     path: string
 }
 export interface Customer {
-    id: string,
+    isPaidToday: any
+    _id: string,
     fname: string,
     lname: string,
     phone_primary: string,
@@ -12,5 +13,6 @@ export interface Customer {
     price: string,
     quantity: string,
     category: string,
-    title: string
+    title: string,
+    pin: boolean
 }

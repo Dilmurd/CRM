@@ -7,7 +7,7 @@ import { useState } from "react";
 
 const Seller = () => {
   const [open, setOpen] = useState<null | string>(null);
-  const { data } = useQuery({ queryKey: ['customer'], queryFn: () => {
+  const { data } = useQuery({ queryKey: ['seller'], queryFn: () => {
     return request.get("/get/sellers").then(response => response.data);
   } })
   
@@ -22,7 +22,7 @@ const Seller = () => {
         </Typography>
         <Button onClick={() => setOpen("seller")}>Create</Button>
       </Box>
-      <Table data={data?.innerData}/>
+      <Table data={data?.innerData} type="seller"/>
       <CreateCS open={open} close={() => setOpen(null)} />
     </div>
   );

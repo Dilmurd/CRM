@@ -30,10 +30,6 @@ const Links: Links[] = [
     title: "Seller",
     path: "/seller"
   },
-  {
-    title: "Product",
-    path: "/product"
-  }
 ];
 
 const openedMixin = (theme: Theme): CSSObject => ({

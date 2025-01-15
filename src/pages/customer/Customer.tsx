@@ -23,7 +23,7 @@ const Customer = () => {
         </Typography>
         <Button onClick={() => setOpen("customer")}>Create</Button>
       </Box>
-      <Table data={data?.innerData}/>
+      <Table data={data?.innerData} type="customer"/>
       <CreateCS open={open} close={() => setOpen(null)} />
     </div>
   );
