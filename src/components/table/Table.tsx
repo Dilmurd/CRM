@@ -105,9 +105,8 @@ const BasicTable: React.FC<{ data: Customer[], type: string }> = ({ data, type }
               <TableCell align="right">{row.address}</TableCell>
               <TableCell align="right">
                 {row.isPaidToday ? (
-                  <CheckCircleIcon style={{ color: "green" }} /> // Show green check if paid today
+                  <CheckCircleIcon style={{ color: "green" }} /> 
                 ) : (
-                  <></> // No icon if not paid
                 )}
               </TableCell>
               <TableCell align="right">
